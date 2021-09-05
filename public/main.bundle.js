@@ -1,1 +1,2 @@
-console.log("Как интересно!");
+(()=>{new function e(){var t,n;!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),n="Violin Charades",(t="name")in this?Object.defineProperty(this,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):this.name=n};var e=document.createElement("p");e.textContent="I like aboba.";var t=document.createElement("h1");t.textContent="Как интересно!",document.querySelector("#root").append(t,e)})();
+//# sourceMappingURL=main.bundle.js.map
