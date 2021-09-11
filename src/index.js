@@ -1,16 +1,45 @@
-class Game {
-  name = "Violin Charades";
-}
-const myGame = new Game();
+import React from "react";
+import ReactDOM from "react-dom";
+// import { Provider } from "react-redux";
+// import { createStore } from "redux";
+// import { persistStore, persistReducer } from "redux-persist";
+// import allReducers from "./reducers";
 
-// создаем параграф
-const p = document.createElement("p");
-p.textContent = `I like aboba.`;
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 
-// создаем элемент заголовка
-const heading = document.createElement("h1");
-heading.textContent = "Как интересно!";
+const firebaseConfig = {
+  apiKey: "AIzaSyB_BOLy_TboCfs1X6dqTFvoLpQcB1ie69g",
+  authDomain: "beanie-9737c.firebaseapp.com",
+  projectId: "beanie-9737c",
+  storageBucket: "beanie-9737c.appspot.com",
+  messagingSenderId: "215378413594",
+  appId: "1:215378413594:web:6178f6971afae63cf869a3",
+  measurementId: "G-RYGE1SDV2F",
+};
 
-// добавляем параграф и заголовок в DOM
-const root = document.querySelector("#root");
-root.append(heading, p);
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+import App from "./App.js";
+
+// if ("serviceWorker" in navigator) {
+//   navigator.serviceWorker.register("/service-worker.js");
+// }
+
+// const store = createStore(
+//   allReducers,
+//   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+// );
+
+ReactDOM.render(<App />, document.getElementById("root"));
+
+// ReactDOM.render(
+//   // <React.StrictMode>
+//   <Provider store={store}>
+//     <App />
+//   </Provider>,
+//   // </React.StrictMode>,
+
+//   document.getElementById("root")
+// );
