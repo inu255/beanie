@@ -5,21 +5,21 @@ import ReactDOM from "react-dom";
 // import { persistStore, persistReducer } from "redux-persist";
 // import allReducers from "./reducers";
 
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+// import { initializeApp } from "firebase/app";
+// import { getAnalytics } from "firebase/analytics";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyB_BOLy_TboCfs1X6dqTFvoLpQcB1ie69g",
-  authDomain: "beanie-9737c.firebaseapp.com",
-  projectId: "beanie-9737c",
-  storageBucket: "beanie-9737c.appspot.com",
-  messagingSenderId: "215378413594",
-  appId: "1:215378413594:web:6178f6971afae63cf869a3",
-  measurementId: "G-RYGE1SDV2F",
-};
+// const firebaseConfig = {
+//   apiKey: "AIzaSyB_BOLy_TboCfs1X6dqTFvoLpQcB1ie69g",
+//   authDomain: "beanie-9737c.firebaseapp.com",
+//   projectId: "beanie-9737c",
+//   storageBucket: "beanie-9737c.appspot.com",
+//   messagingSenderId: "215378413594",
+//   appId: "1:215378413594:web:6178f6971afae63cf869a3",
+//   measurementId: "G-RYGE1SDV2F",
+// };
 
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+// const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
 
 import App from "./App.js";
 
